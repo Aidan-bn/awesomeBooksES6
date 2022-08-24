@@ -1,8 +1,7 @@
-
 const displayBooks = (list) => {
-    let tr = '';
-    let sn = 1;
-    list.forEach((item) => {
+  let tr = '';
+  let sn = 1;
+  list.forEach((item) => {
     const tr1 = `<tr>
     <td>${sn}</td>
     <td>${item.title}</td>
@@ -11,8 +10,8 @@ const displayBooks = (list) => {
     </tr>`;
     tr += tr1;
     sn += 1;
-    });
-    document.getElementById('tbody').innerHTML = tr;
-}
+  });
+  document.getElementById('tbody').innerHTML = tr;
+};
 
 export default displayBooks;
